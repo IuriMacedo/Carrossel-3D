@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background-color: brown;
+    font-family: sans-serif;
+    color: 	#FFD700;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+animation: rotate360 150s infinite forwards;
+}
+
+.imagem{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 25px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    width: 290px;
+    height: 187px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+
+@keyframes rotate360{
+
+    from{
+transform: rotateY(0deg);
+    }
+
+    to{
+transform: rotateY(360deg);
+    }
+    
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://jogo24.com/wp-content/uploads/2023/05/Captura-de-tela-2023-05-26-113109.png);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://conteudo.imguol.com.br/c/esporte/2e/2022/06/11/wanderson-comemora-gol-marcado-pelo-inter-na-partida-contra-o-flamengo-valida-pelo-campeonato-brasileiro-1654995841147_v2_3x4.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://i.superesportes.com.br/c93RvwaEJThmX893zOw25c-D3Dk=/1200x1200/smart/imgsapp.mg.superesportes.com.br/app/noticia_126420360808/2022/11/16/3979848/mauricio-comemora-gol-pelo-internacional_1_90556.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://guaiba.com.br/wp-content/uploads/2023/06/EnnerValenciaNoBeiraRio.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://www.ogol.com.br/img/jogadores/08/872708_ori__20220215004435_fabricio_bustos.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://jogo24.com/wp-content/uploads/2023/08/F4vSWtrXMAEvFqe.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://images2.minutemediacdn.com/image/upload/c_crop,w_3360,h_1890,x_0,y_352/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_pt-BR_international_web/01gr19dhzkwb1wn8n3v0.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://portaldocolorado.com.br/wp-content/uploads/2022/08/rene07_crop1653075876641.jpg_242310155.webp);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://pbs.twimg.com/media/FefVIIEXoAAEANo.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+h1 p{
+    text-align: center;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
